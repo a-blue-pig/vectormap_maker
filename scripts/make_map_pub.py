@@ -2,6 +2,7 @@
 import rospy
 from std_msgs.msg import String
     
+# Publisher to change the 'mode'
 def change_mode():
     rospy.init_node('map_maker_pub')
     rospy.loginfo('Node has started')
