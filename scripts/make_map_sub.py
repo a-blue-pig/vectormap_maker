@@ -47,6 +47,7 @@ def write_file():
                         x2,y2 = data[point+1]
                         outfile.write("{}, {}, {}, {}\n".format(x1,y1,x2,y2))
                     else:
+                        outfile.write("\n")
                         break
 
             # Treat the following points as a closed loop chain
@@ -61,6 +62,7 @@ def write_file():
                     elif data[point+1] == 'e':
                         x1,y1 = data[point]
                         outfile.write("{}, {}, {}, {}\n".format(x1,y1,xf,yf))
+                        outfile.write("\n")
                         break
 
             # End of the file
